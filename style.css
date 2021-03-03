@@ -144,11 +144,32 @@ a{
     width: 99%;
 }
 
-.example{
-    color: rgb(190, 186, 186);
-    font-size: 15px;
+.bottom-button{
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+
 }
 
-.ppp{
-    color: white;
+.next{
+    background-color: chartreuse;
+    border-color: chartreuse;
+}
+
+.back{
+    background-color: grey;
+    border-color: grey;
+}
+
+.bottom>div{
+    display: flex;
+    
+}
+
+.bottom{
+    display: flex;
+    background-color: lavender;
+    justify-content: space-between;
+    padding: 20px;
 }
