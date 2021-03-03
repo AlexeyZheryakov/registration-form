@@ -1,0 +1,154 @@
+.container-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-1>div{
+    margin: 30px;
+}
+
+.container-sections{
+    margin: 30px;
+    border-radius: 20px;
+    display: flex;
+    border: 1px solid silver;
+    justify-content: space-around;
+    box-shadow: 0 0 10px rgb(219, 219, 219);
+}
+
+.sections{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.progress-bar{
+    margin: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-1{
+    flex: 2.5;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.box{
+    flex: 1;
+    text-align: center;
+    margin: 1px;
+    font-style: italic;
+}
+
+.first-box-radius{
+    border-radius: 5px 0 0 5px;
+}
+
+.last-box-radius{
+    border-radius: 0 5px 5px 0;
+}
+
+/* .container-1 div{
+    display: flex;
+    border: 1px solid silver;
+    justify-content: space-around;
+} */
+
+.box-background-color-passed{
+    background-color: green;
+    color: white;
+}
+
+.box-background-color-current{
+    background-color: chartreuse;
+    color: white;
+}
+
+.box-background-color-next{
+    background-color: rgb(219, 219, 219);
+}
+
+.general-information{
+    position: absolute;
+    padding: 0 10px;
+    top: 29px;
+    background: #fff;
+    font-style: italic;
+}
+
+.main-info-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    font-weight: bolder;
+}
+
+.box-2{
+    border: 1px solid silver;
+    flex: 1;
+    margin: 5px;
+}
+
+input{
+    width: 250px;
+}
+
+.box-10{
+    position: relative;
+    padding-top: 30px;
+    margin: 30px;
+    color: rgb(100, 100, 100);
+}
+
+
+a{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+.url1{
+    color: slateblue;
+}
+
+.url2{
+    color: green;
+}
+
+.url3{
+    color: blue;
+}
+
+.url4{
+    color: orange;
+}
+
+.url5{
+    color: black;
+}
+
+.ur6{
+    color: red;
+}
+
+.place-of-birth{
+    font-weight: bolder;
+    line-height: 0;
+    font-size: 20px;
+}
+
+.place-of-birth>input{
+    width: 99%;
+}
+
+.example{
+    color: rgb(190, 186, 186);
+    font-size: 15px;
+}
+
+.ppp{
+    color: white;
+}

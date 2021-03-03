@@ -5,8 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div> пам  па пам</div>
+    <div class="container-1">
+        <div class="container-sections">
+            <div class="sections"><a class="url1" href="">Личный кабинет</a></div>
+            <div class="sections"><a class="url2" href="">Раздел 1</a></div>
+            <div class="sections"><a class="url3" href="">Раздел 2</a></div>
+            <div class="sections"><a class="url4" href="">Раздел 3</a></div>
+            <div class="sections"><a class="url5" href="">Раздел 4</a></div>
+            <div class="sections"><a class="url6" href="">Раздел 5</a></div>
+        </div>
+        <div class="progress-bar">
+            <div class="box-1">Заполните форму</div>
+            <div class="box box-background-color-passed first-box-radius">1</div>
+            <div class="box box-background-color-passed">2</div>
+            <div class="box box-background-color-current">3</div>
+            <div class="box box-background-color-next">4</div>
+            <div class="box box-background-color-next last-box-radius">5</div>
+        </div>
+        <div class="box-10">
+            <hr>
+            <div class="general-information">Общая информация</div>
+        </div>
+        <div class="main-info-container">
+            <div class="box-2">
+                <p>Фамилия</p>
+                <input type="text">
+                <p>Меняли фамилию?</p>
+                <div class="form_toggle">
+                    <div class="form_toggle-item item-1">
+                        <input id="fid-1" type="radio" name="radio" value="off" checked>
+                        <label for="fid-1">Нет</label>
+                    </div>
+                    <div class="form_toggle-item item-2">
+                        <input id="fid-2" type="radio" name="radio" value="on">
+                        <label for="fid-2">Да</label>
+                    </div>
+                    <p>Гражданство</p>
+                </div>
+            </div>
+            <div class="box-2">
+                <p>Имя</p>
+                <input type="text">
+            </div>
+            <div class="box-2">
+                <p>Отчество</p>
+                <input type="text">
+            </div>
+        </div>
+        <div class="place-of-birth">
+            <p>Место рождения</p>
+            <input type="text">
+            <p class="example">Например, Россия, Комсомольск-на-умуре</p>
+        </div>
+        <div>
+            <button>Назад</button>
+            <button class="ppp">Далее &rarr;</button>
+        </div>
+    </div>
 </body>
 </html>
