@@ -29,36 +29,48 @@
             <hr>
             <div class="general-information">Общая информация</div>
         </div>
-        <div class="main-info-container">
-            <div class="box-2">
-                <p>Фамилия</p>
-                <input type="text">
-                <p>Меняли фамилию?</p>
-                <div class="form_toggle">
-                    <div class="form_toggle-item item-1">
-                        <input id="fid-1" type="radio" name="radio" value="off" checked>
-                        <label for="fid-1">Нет</label>
+        <form action="">
+            <div class="main-info-container">
+                <div class="box-2">
+                    <p>Фамилия</p>
+                    <input type="text">
+                    <p>Меняли фамилию?</p>
+                    <div class="form_toggle">
+                        <div class="form_toggle-item item-1">
+                            <input id="fid-1" type="radio" name="radio" value="off" checked>
+                            <label for="fid-1">Нет</label>
+                        </div>
+                        <div class="form_toggle-item item-2">
+                            <input id="fid-2" type="radio" name="radio" value="on">
+                            <label for="fid-2">Да</label>
+                        </div>
+                        <p>Гражданство</p>
                     </div>
-                    <div class="form_toggle-item item-2">
-                        <input id="fid-2" type="radio" name="radio" value="on">
-                        <label for="fid-2">Да</label>
-                    </div>
-                    <p>Гражданство</p>
+                </div>
+                <div class="box-2">
+                    <p>Имя</p>
+                    <input type="text">
+                    <label for="date">Дата рождения: </label>
+                    <input type="date" id="date" name="date"/>
+                </div>
+                <div class="box-2">
+                    <p>Отчество</p>
+                    <input type="text">
+                    <p>Семейное положение</p>
+                        <select name=""> <!--раскрывающийся список-->
+                            <option  label = "Женат/Замужем">
+                            <option  label = "В разводе">
+                            <option  label = "Есть жена и любовница">
+                            <option  label = "Муж козёл, детей двое">
+                            <option  label = "Дружу с тёлочкой">
+                        </select>
                 </div>
             </div>
-            <div class="box-2">
-                <p>Имя</p>
-                <input type="text">
+            <div class="place-of-birth">
+                <p>Место рождения</p>
+                <input type="text" placeholder="Россия, Комсомольск-на-умуре">
             </div>
-            <div class="box-2">
-                <p>Отчество</p>
-                <input type="text">
-            </div>
-        </div>
-        <div class="place-of-birth">
-            <p>Место рождения</p>
-            <input type="text" placeholder="Россия, Комсомольск-на-умуре">
-        </div>
+        </form>       
         <div class="bottom">
             <div><button class="bottom-button back">&larr; Назад</button></div>
             <div><button class="bottom-button next">Далее &rarr;</button></div>
