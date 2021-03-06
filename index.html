@@ -5,8 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div> пам  па пам</div>
+    <div class="container-1">
+        <div class="container-sections">
+            <div class="sections"><a class="url1" href="">Личный кабинет</a></div>
+            <div class="sections"><a class="url2" href="">Раздел 1</a></div>
+            <div class="sections"><a class="url3" href="">Раздел 2</a></div>
+            <div class="sections"><a class="url4" href="">Раздел 3</a></div>
+            <div class="sections"><a class="url5" href="">Раздел 4</a></div>
+            <div class="sections"><a class="url6" href="">Раздел 5</a></div>
+        </div>
+        <div class="progress-bar">
+            <div class="box-1">Заполните форму</div>
+            <div class="box box-background-color-passed first-box-radius">1</div>
+            <div class="box box-background-color-passed">2</div>
+            <div class="box box-background-color-current">3</div>
+            <div class="box box-background-color-next">4</div>
+            <div class="box box-background-color-next last-box-radius">5</div>
+        </div>
+        <div class="box-10">
+            <hr>
+            <div class="general-information">Общая информация</div>
+        </div>
+        <form id="formData" action="https://example.com" method="POST">
+            <div class="main-info-container">
+                <div class="box-2">
+                    <div class="box-3">
+                        <p>Фамилия</p>
+                        <input name="lastName" type="text">
+                    </div>
+                    <div class="box-3">
+                        <p>Меняли фамилию?</p>
+                        <div class="form_toggle">
+                            <div class="form_toggle-item item-1">
+                                <input id="fid-1" type="radio" name="changeOfSurname" value="No" checked>
+                                <label for="fid-1">Нет</label>
+                            </div>
+                            <div class="form_toggle-item item-2">
+                                <input id="fid-2" type="radio" name="changeOfSurname" value="Yes">
+                                <label for="fid-2">Да</label>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="box-3">
+                        <p>Гражданство</p>
+                        <select name="citizenship">
+                            <option>Раша Федераша</option>
+                            <option>Не Наша Федераша</option>
+                            <option>Америка</option>
+                            <option>Канада</option>
+                            <option>Северный полюс</option>
+                        </select>
+                    </div>  
+                </div>
+                <div class="box-2">
+                    <div class="box-3">
+                        <p>Имя</p>
+                        <input name="firstName" type="text">
+                    </div>
+                    <div class="box-3">
+                        <p>Пол</p>
+                        <div class="form_toggle">
+                            <div class="form_toggle-item item-1">
+                                <input id="fid-3" type="radio" name="gender" value="girl" checked>
+                                <label for="fid-3">Жен</label>
+                            </div>
+                            <div class="form_toggle-item item-2">
+                                <input id="fid-4" type="radio" name="gender" value="man">
+                                <label for="fid-4">Муж</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-4">
+                        <p>Дата рождения</p>
+                        <select name="date">
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>15</option>
+                        </select>
+                        <select name="month">
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
+                        </select>
+                        <select name="year">
+                            <option>1970</option>
+                            <option>1980</option>
+                            <option>1990</option>
+                            <option>2000</option>
+                            <option>2010</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div class="box-3">
+                        <p>Отчество</p>
+                        <input name="patronymic" type="text">
+                    </div>   
+                    <div class="box-3">
+                        <p>Семейное положение</p>
+                        <select name="maritalStatus">
+                            <option>Женат/Замужем</option>
+                            <option>В разводе</option>
+                            <option>Есть жена и любовница</option>
+                            <option>Муж козёл, детей двое</option>
+                            <option>Дружу с тёлочкой</option>
+                        </select>
+                    </div>       
+                </div>
+            </div>
+            <div class="place-of-birth">
+                <p>Место рождения</p>
+                <input name="placeOfBirth" type="text" placeholder="Россия, Комсомольск-на-умуре">
+            </div>
+        </form>       
+        <div class="bottom">
+            <div><button class="bottom-button back">&larr; Назад</button></div>
+            <div><button type="submit" form="formData" class="bottom-button next">Далее &rarr;</button></div>
+        </div>
+    </div>
 </body>
 </html>
