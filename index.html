@@ -29,7 +29,7 @@
             <hr>
             <div class="general-information">Общая информация</div>
         </div>
-        <form method="POST">
+        <form id="formData" action="https://example.com" method="POST">
             <div class="main-info-container">
                 <div class="box-2">
                     <div class="box-3">
@@ -40,11 +40,11 @@
                         <p>Меняли фамилию?</p>
                         <div class="form_toggle">
                             <div class="form_toggle-item item-1">
-                                <input id="fid-1" type="radio" name="changeOfSurname" value="off" checked>
+                                <input id="fid-1" type="radio" name="changeOfSurname" value="No" checked>
                                 <label for="fid-1">Нет</label>
                             </div>
                             <div class="form_toggle-item item-2">
-                                <input id="fid-2" type="radio" name="changeOfSurname" value="on">
+                                <input id="fid-2" type="radio" name="changeOfSurname" value="Yes">
                                 <label for="fid-2">Да</label>
                             </div>
                         </div>
@@ -52,11 +52,11 @@
                     <div class="box-3">
                         <p>Гражданство</p>
                         <select name="citizenship">
-                            <option  label = "Раша Федераша">
-                            <option  label = "Не Наша Федераша">
-                            <option  label = "Америка">
-                            <option  label = "Канада">
-                            <option  label = "Северный полюс">
+                            <option>Раша Федераша</option>
+                            <option>Не Наша Федераша</option>
+                            <option>Америка</option>
+                            <option>Канада</option>
+                            <option>Северный полюс</option>
                         </select>
                     </div>  
                 </div>
@@ -81,25 +81,25 @@
                     <div class="box-4">
                         <p>Дата рождения</p>
                         <select name="date">
-                            <option  label = "10">
-                            <option  label = "11">
-                            <option  label = "12">
-                            <option  label = "13">
-                            <option  label = "14">
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>15</option>
                         </select>
                         <select name="month">
-                            <option  label = "Июня">
-                            <option  label = "Июля">
-                            <option  label = "Августа">
-                            <option  label = "Сентября">
-                            <option  label = "Октября">
+                            <option>Июня</option>
+                            <option>Июля</option>
+                            <option>Августа</option>
+                            <option>Сентября</option>
+                            <option>Октября</option>
                         </select>
                         <select name="year">
-                            <option  label = "1970">
-                            <option  label = "1980">
-                            <option  label = "1990">
-                            <option  label = "2000">
-                            <option  label = "2010">
+                            <option>1970</option>
+                            <option>1980</option>
+                            <option>1990</option>
+                            <option>2000</option>
+                            <option>2010</option>
                         </select>
                     </div>
                 </div>
@@ -111,11 +111,11 @@
                     <div class="box-3">
                         <p>Семейное положение</p>
                         <select name="maritalStatus">
-                            <option  label = "Женат/Замужем">
-                            <option  label = "В разводе">
-                            <option  label = "Есть жена и любовница">
-                            <option  label = "Муж козёл, детей двое">
-                            <option  label = "Дружу с тёлочкой">
+                            <option>Женат/Замужем</option>
+                            <option>В разводе</option>
+                            <option>Есть жена и любовница</option>
+                            <option>Муж козёл, детей двое</option>
+                            <option>Дружу с тёлочкой</option>
                         </select>
                     </div>       
                 </div>
@@ -127,7 +127,7 @@
         </form>       
         <div class="bottom">
             <div><button class="bottom-button back">&larr; Назад</button></div>
-            <div><button type="submit" class="bottom-button next">Далее &rarr;</button></div>
+            <div><button type="submit" form="formData" class="bottom-button next">Далее &rarr;</button></div>
         </div>
     </div>
 </body>
